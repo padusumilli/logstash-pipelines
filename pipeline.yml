@@ -1,0 +1,12 @@
+- pipeline.id: ui-rest
+  path.config: "/usr/share/logstash/ui-rest-pipeline.config"
+  queue.type: persisted
+  pipeline.workers: 3
+- pipeline.id: agent-install
+  path.config: "/usr/share/logstash/agent-install-pipeline.config"
+  queue.type: persisted
+  pipeline.workers: 3
+- pipeline.id: site-eventprocessor
+  path.config: "/usr/share/logstash/site-eventprocessor-pipeline.config"
+  queue.type: persisted
+  pipeline.workers: 3
